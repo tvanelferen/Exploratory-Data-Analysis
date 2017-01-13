@@ -17,7 +17,7 @@ energy$Date<-strptime(energy$Date, "%Y-%m-%d")
 energy[,(3:9)]<-as.numeric(unlist(energy[,(3:9)]))
 
 ##Create png
-png(filename = "Plot2.png", width = 540, height = 540, units = "px")
+png(filename = "Plot2.png", width = 480, height = 480, units = "px")
 #create plot, without drawing the lines
 with(energy, plot(Time,Global_active_power, 
                   type="n", 
